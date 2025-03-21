@@ -1,0 +1,5 @@
+app_Streamlit/
+env_P10/
+local.settings.json
+requetes.ipynb
+.gitignore

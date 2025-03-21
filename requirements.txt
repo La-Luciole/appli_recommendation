@@ -1,0 +1,19 @@
+
+# Dépendances liées à Azure Functions
+azure-functions==1.21.3      # Nécessaire pour exécuter l'Azure Function. Permet d'interagir avec le runtime Azure Functions.
+azure-storage-blob==12.25.0  # Permet d'interagir avec Azure Blob Storage pour charger et stocker des fichiers dans Azure.
+
+# Dépendances pour le calcul et la manipulation de données
+numpy==2.2.3                 # Utilisé pour manipuler les matrices d'embeddings et effectuer des calculs numériques (par exemple, la similarité cosinus).
+pandas==2.2.3                # Pour charger et traiter les fichiers CSV et manipuler les données sous forme de DataFrame.
+scikit-learn==1.6.1          # Pour effectuer des calculs liés à l'apprentissage automatique, y compris la similarité cosinus et d'autres techniques de ML.
+
+# Dépendance pour les requêtes HTTP externes
+requests==2.32.3             # Utilisé pour envoyer des requêtes HTTP vers des API externes (par exemple, pour communiquer avec d'autres services ou effectuer des appels HTTP).
+
+# Dépendance pour les graphiques
+matplotlib==3.10.1           # Pour la création de graphiques et de visualisations.
+
+# Dépendance pour encoder l'image
+pillow==11.1.0
+
