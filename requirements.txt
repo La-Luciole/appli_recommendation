@@ -17,3 +17,5 @@ matplotlib==3.10.1           # Pour la création de graphiques et de visualisati
 # Dépendance pour encoder l'image
 pillow==11.1.0
 
+dotenv
+
