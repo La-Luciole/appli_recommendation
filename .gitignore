@@ -2,3 +2,5 @@ app_streamlit/.env
 env_P10/
 requetes.ipynb
 local.settings.json
+app_Streamlit/.env
+*.env
