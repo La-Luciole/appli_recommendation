@@ -202,7 +202,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "last_article": last_article,
             "recommendations": reco_ids,
             "scores": scores,
-            #"graph_url": f"{GRAPHS_SAS_URL}/{CONTAINER_NAME}/{user_id}_graph.png"
             "graph_url": f"{base_url}/{user_id}_graph.png?{sas_token}"
         }
         
