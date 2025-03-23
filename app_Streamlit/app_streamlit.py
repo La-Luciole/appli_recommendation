@@ -11,6 +11,9 @@ load_dotenv()
 # Récupérer la clé API
 api_key = os.getenv('AZURE_API_KEY')
 
+print("Répertoire de travail actuel:", os.getcwd())
+print("Fichiers dans ce répertoire:", os.listdir())
+
 # Fonction pour obtenir les recommandations depuis l'API
 def get_recommendations(user_id,api_key):
     # URL de l'API avec la clé de fonction Azure
@@ -67,7 +70,7 @@ if user_id and user_id != st.session_state.user_id:
 # Si les recommandations ne sont pas encore affichées et que l'ID utilisateur est défini
 if st.session_state.user_id and not st.session_state.get('recommendations_displayed', False):
     # Obtenir les recommandations
-    data = get_recommendations(st.session_state.user_id)
+    data = get_recommendations(st.session_state.user_id,api_key=api_key)
 
     if data:
         # Afficher l'identifiant de l'utilisateur
